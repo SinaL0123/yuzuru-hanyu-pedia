@@ -1,0 +1,737 @@
+@font-face {
+    font-family:"GoudyStM"; 
+    src: url("GoudyStM-webfont.woff") format("woff");
+}
+
+
+*{
+    margin:0;
+}
+
+/* background setting*/
+
+body{
+    font-family:"GoudyStM",sans-serif;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+
+.home{
+    background-image: url("homepage/homepage.jpeg");
+    background-size: 100% auto;
+}
+
+.intro {
+    background-color: rgba(71, 189, 193, 0.2);
+}
+
+.tech {
+    background-color: rgba(246, 238, 93, 0.2);
+}
+
+.perform{
+    background-color: rgba(213, 140, 239, 0.2);
+}
+
+.scores{
+    background-color: rgba(199, 239, 140, 0.2);
+}
+
+/* header setting */
+header{
+    padding: 10px;
+    text-align: center;
+    line-height: 1.3em;
+    position:sticky;
+}
+
+.introheader{
+    background-color: lightblue;
+}
+
+.techheader{
+    background-color: rgb(255, 238, 141);
+}
+
+.performheader{
+    background-color: rgb(220, 170, 245);
+}
+
+.scoresheader{
+    background-color: rgb(199, 239, 140); 
+}
+
+ /* general layout */
+main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    column-gap: 1.5em;
+}
+
+.scores main{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* paragraph setting */
+article > p{
+    line-height: 2em;
+    font-size:1.1em;
+}
+
+#info-pic{
+    display: block;
+    margin: 20px auto;
+}
+
+/* catalogue settings */
+#catalogue, #catalogue-tech, #catalogue-perform,#catalogue-scores, #otherinfo {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-attachment: sticky;
+    line-height: 2em;
+}
+
+#otherinfo{
+    line-height: 2em;
+}
+
+/* techniques page */
+.techmain{
+    display:flex;
+    justify-content: space-between;
+}
+
+#catalogue-tech{
+    width:14%;
+}
+
+#gifs{
+    margin-top:30px;
+    margin-right:20px;
+    width:80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap:1em;
+
+}
+
+#gifs span img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+    vertical-align: top;
+}
+
+span{
+    display:flex;
+    align-items:start;
+    justify-content: space-between;
+}
+
+span>section{
+    padding-left:10px;
+    padding-right:10px;
+    top:0;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+section>h4{
+    background-color: rgb(255, 238, 141);
+    position: relative;
+}
+
+/* figure settings */
+.figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.competition, .show{
+    padding: 5%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    column-gap: 20%;
+}
+
+.competition section, .show section{
+    align-items:center;
+    text-align: center;
+}
+
+/* text settings */
+h1{
+    padding:10px;
+}
+
+#medalrecordh3, #medallisth3{
+    border-bottom: 1px transparent solid;
+    padding-top: 20px;
+}
+
+h3{
+    border-bottom: 1px black solid;
+}
+
+#competitionh3{
+    margin-top: 3%;
+}
+
+h4{
+    background-color: lightblue;
+}
+
+footer{
+    text-align: center;
+    font-size:1.1em;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+.performfooter{
+    margin-top:10px;
+}
+/* link setting */
+
+a:link, a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: powderblue;
+}
+
+a:active{
+    color:white;
+}
+
+
+.homepic a:hover{
+    /* opacity:0.7; */
+    background-color: transparent;
+}
+
+span a:hover, span a:hover{
+    background-color: orange;
+}
+
+#techa a:hover{
+    background-color: rgb(255, 238, 141);
+}
+
+#performa a:hover{
+    background-color: rgb(220, 170, 245);
+}
+
+#scorea a:hover{
+    background-color: rgb(199, 239, 140); 
+}
+#thispage{
+    font-size: 1.1em;
+    text-decoration: line-through;
+}
+
+.figure a:hover{
+    opacity:0.5;
+    background-color: transparent;
+}
+
+.figure a:active{
+    opacity:0.2;
+}
+
+footer a:link, footer a:visited{
+    color:white;
+}
+
+.homeheader a:hover, footer a:hover{
+    color:lightblue;
+    background-color: transparent;
+}
+
+.homeheader a:active, footer a:active{
+    color:plum;
+}
+
+#footerlink a:link, #footerlink a:visited{
+    color:purple;
+    text-decoration: underline;
+}
+
+#footerlink a:hover{
+    background-color:plum;
+}
+
+#footerlink a:active{
+    color:white;
+}
+
+/* Style for the two tables */
+.tables {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content:center;
+}
+
+.medal-record, .medal-list {
+    width: 100%;
+    margin:20px;
+    border-bottom: 3px rgba(154,205,50,0.2) solid;
+}
+
+/* table header color */
+.medal-record th, .medal-list th {
+    background-color:rgba(154,205,50,0.7);
+}
+
+/* border */
+.medal-record th, .medal-record td, .medal-list th, .medal-list td  {
+    padding: 10px;
+    text-align: center;
+}
+
+/* different colors between columns */
+.medal-record tr:nth-child(2n) td, .medal-list tr:nth-child(2n) td {
+    background-color: rgba(154,205,50,0.2); 
+}
+
+.medal-record tr:nth-child(2n+1) td, .medal-list tr:nth-child(2n+1) td {
+    background-color: rgba(255,255,255,0); 
+}
+
+#og{
+    background-color: rgba(255,255,255,0); 
+}
+
+#gpf{
+    background-color: rgba(154,205,50,0.2); 
+}
+
+/* homepage */
+.homeheader{
+    font-family: "Sawarabi Mincho"; 
+    font-size:1.5em;
+    text-align: center;
+}
+
+.homeheader h1 a{
+    color:white;
+}
+
+.homepic{
+    padding: 50px;
+    width:50%;
+    align-self: center;
+    margin-left:23%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap:3em;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img{
+    transition-property: opacity;
+    transition-duration: 400ms; /*makes the transition of opacity more smooth*/
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20px; 
+    left:0;
+    right:0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    transition-property: color;
+    transition-duration: 400ms;
+}
+
+/* button set of introduction page */
+.buttons{
+    position: relative;
+    text-align: center;
+}
+
+.arrow-button {
+    color:lightblue;
+    font-size: 3.5em; 
+    transition-duration: 300ms;
+    background-color: transparent; 
+    border: none; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* add shades when hover on the button */
+.arrow-button:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.arrow-button:active {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3); 
+}
+
+.left-button {
+    color:lightgray;
+    position: absolute;
+    left: 10%;
+    top:35%;
+}
+
+.right-button {
+    position: absolute;
+    right: 10%;
+    top:35%;
+}
+
+svg.menu {
+    display: none; /* hide menu icon */
+  }
+
+/* responsive to preferred color scheme */
+@media only screen and (prefers-color-scheme: dark) {
+/* background color change */
+    .intro {
+        background-color: rgb(68, 108, 128)
+    }
+    
+    .tech {
+        background-color: rgb(122, 98, 45);
+    }
+    
+    .perform{
+        background-color: rgb(93, 60, 105);
+    }
+    
+    .scores{
+        background-color: rgb(120, 143, 85);
+    }
+
+/* header color change */
+    .homeheader{
+        background-color: rgba(255,255,255, 0.4);
+    }
+
+    .homeheader h1 a{
+        color:black;
+    }
+
+    .introheader{
+        background-color: rgb(73, 128, 146);
+    }
+
+    .techheader{
+        background-color: rgb(155, 131, 84);
+    }
+
+    .performheader{
+        background-color: rgb(132, 101, 147);
+    }
+
+    .scoresheader{
+        background-color: rgb(137, 164, 96); 
+    }
+
+
+/* text change */
+    h1,h2,h3,h4,p,ul{
+        color:white;
+    }
+
+    tr{
+        color:lightgoldenrodyellow;
+    }
+
+    #otherinfo h4{
+        background-color: rgb(73, 128, 146);
+    }
+
+    #gifs h4{
+        background-color: rgb(155, 136, 84);
+    }
+    
+    h3{
+        border-bottom: 1px white solid;
+    }
+
+    .medal-record th, .medal-list th {
+        background-color:rgba(127, 170, 41, 0.7);
+    }
+
+    /* boarder color change in introduction page */
+    #otherinfo{
+        line-height: 2em;
+    }
+
+    .medal-record tr:nth-child(2n+1) td, .medal-list tr:nth-child(2n+1) td {
+        background-color: rgba(250,250,210,0.2); 
+    }
+/* link change */
+    a:link, a:visited{
+        color:white;
+    }
+    
+    a:hover, #techa a:hover, #performa a:hover,#scorea a:hover{
+        background-color: transparent;
+        color: black;
+    }
+    
+    a:active, #techa a:active, #performa a:active,#scorea a:active{
+        color:lightgrey;
+    }
+
+    /* tech page, techniques names link */
+    span a:hover{
+        background-color: rgba(173, 123, 30, 0.686);
+        color:blanchedalmond;
+    }
+
+    span a:active{
+        background-color: transparent;
+        color:burlywood;
+    }
+    footer a:hover{
+        color:lightblue;
+    }
+
+    footer a:active{
+        color:aqua;
+    }
+
+    #footerlink a:link, #footerlink a:visited{
+        color:white;
+        text-decoration: underline;
+    }
+    
+    #footerlink a:hover{
+        background-color: transparent;
+        color:plum;
+    }
+    
+    #footerlink a:active{
+        color:black;
+    }
+    
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 45em) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* menu toggle */
+    .menubar{
+        display:none;
+    }
+
+    svg.menu{
+        display:flex;
+        position:absolute;
+        width:2.5em;
+        height:3em;
+        top:0.3em;
+        right:0.4em;
+    }
+
+    svg.menu:hover{
+        cursor:pointer;
+        stroke: black;
+    }
+
+    .menubar.toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header.toggle {
+        height: 2.5em;
+    }
+
+    /* homepage */
+    body {
+        background-attachment: scroll;
+    }
+
+    .homepic {
+        padding: 20px;
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .image-text {
+        bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    /* intro page */
+    main {
+        grid-template-columns: 1fr;
+        margin: 5%;
+    }
+
+    #info-pic {
+        margin: 10px auto;
+    }
+
+    /* performance page */
+    .figure {
+        grid-template-columns: 1fr; 
+    }
+
+    .competition,
+    .show {
+        grid-template-columns: 1fr 1fr; 
+        gap: 1em;
+        text-align: center;
+    }
+
+    /* tech page */
+    .tech main{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+    #catalogue-tech{
+        width:100%;
+    }
+
+    #gifs{
+        grid-template-columns: 1fr;
+        width:100%;
+    }
+
+    #gifs span{
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* scores page */
+    .scores main {
+        grid-template-columns: 1fr; 
+    }
+
+    .tables {
+        order: 2; 
+        width: 90vw;
+    }
+
+    /* info page arrow */
+    .left-button {
+        left:2%;
+    }
+
+    .right-button {
+        right:2%;
+    }
+
+}
+
+
+/* Media query with a minimum width of 45em and maximum width of 70em*/
+@media (min-width: 45em)and (max-width:70em) {
+    
+      svg.menu {
+        display: none; /* hide menu icon */
+      }
+    
+    .intro-main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #mainintro{
+        margin:5%;
+    }
+    
+    /* intro page */
+    #catalogue{
+        grid-column: span 2; /*allow the content and main intro align below the content*/
+        margin-bottom: 5px;
+    }
+
+    #info-pic {
+        margin: 20px auto;
+    }
+
+    /* performance page */
+    .perform-main{
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+    }
+    
+    .figure {
+        grid-template-columns: 1fr;
+    }
+
+    .competition,
+    .show {
+        display: grid;
+        grid-template-columns: repeat(3,1fr); 
+        column-gap: 20%;
+        row-gap: 1.5em;
+        text-align: center;
+        align-items: center;
+    }
+    /* tech page */
+    .tech main{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+    #catalogue-tech{
+        width:100%;
+    }
+
+    #gifs{
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+    }
+
+    #gifs span{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        justify-content: space-between;
+        margin-left:10px;
+    }
+
+    #gifs span img{
+        width: 50%;
+        margin-bottom:10px;
+    }
+
+    #gifs span p {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+

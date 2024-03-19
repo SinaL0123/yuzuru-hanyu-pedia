@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YH | Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class = "web-icon" rel="icon" type="img/png" href="feather.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- java script used to change web icon based on date -->
+    <script src = "dateAndIcon.js"></script>
+</head>
+
+<body class="intro">
+
+    <!-- heading -->
+    <header class="introheader">
+        <h1>Yuzuru Hanyu - Introduction</h1>
+
+        <!-- menu icon -->
+        <svg class="menu" viewBox="0 0 30 30" role="button">
+            <title>Navigation Menu Icon</title>
+            <line x1="8" x2="22" y1="10" y2="10" stroke="white" stroke-linecap="round" stroke-width="2"/>
+            <line x1="8" x2="22" y1="15" y2="15" stroke="white" stroke-linecap="round" stroke-width="2"/>
+            <line x1="8" x2="22" y1="20" y2="20" stroke="white" stroke-linecap="round" stroke-width="2"/>
+        </svg>
+    </header>
+    <!-- catalogue -->
+    <main class="intro-main">
+        <article class = "menubar" id="catalogue">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="intro.html" id="thispage">Introduction</a></li>
+                <li><a href="performances.html">Iconic Performances</a></li>
+                <li><a href="tech.html">Iconic Techniques and Style</a></li>
+                <li><a href="scores.html">Competition Achievements and Scores</a></li>
+            </ul>
+        </article>
+        
+        <article id="mainintro">
+            <div class = "buttons">
+            <button type="button" class="arrow-button left-button">‹</button> 
+
+            <img id = "info-pic" 
+            src="info/info-400.png" 
+            srcset="info/info-400.png 400w, info/info-800.png 800w, info/info-1200.png 1200w"
+            sizes="(max-width: 45em) 100vw, (max-width: 70em) 80vw, 60vw"
+            width="400" 
+            height="258" 
+            
+            alt="Yuzuru Hanyu performing SEIMEI">
+
+            <!-- add a button to change picture -->
+            <button type="button" class="arrow-button right-button">›</button> 
+            </div>
+            <p>
+                Yuzuru Hanyu (羽生 結弦, Hanyū Yuzuru, Hiragana: はにゅう ゆづる; born December 7, 1994) is a Japanese figure skater
+                and ice show producer.
+            </p>
+            <p>
+                Main achievements in competition:
+                He is a two-time Olympic champion (2014, 2018), a two-time World champion (2014, 2017), a four-time
+                Grand Prix Final champion (2013 - 2016), the 2020 Four Continents champion, the 2010 World Junior
+                champion, the 2009 - 10 Junior Grand Prix Final champion, and a six-time Japanese national champion
+                (2012 - 2015, 2020 - 2021).
+            </p>
+            <p>
+                Greatest of All Time
+                Having been called "greatest of all time (GOAT)" figure skater in history by many sport writers,
+                commentators, and skaters for his well-rounded skills, achievements, popularity, and impact on the
+                sport. He is the first men's singles skater to achieve a Super Slam, having won all major competitions
+                in both his senior and junior careers. He has broken world records nineteen times - the most times among
+                single skaters since the introduction of the ISU Judging System in 2004. 
+            </p>
+        </article>
+
+        <article id="otherinfo">
+            <h4>Perosnal Information</h4>
+            <ul>
+                <li>Birthday:December 7, 1994 (age 28)</li>
+                <li>Hometown (Birthplace):Sendai, Miyagi, Japan</li>
+                <li>Alma mater: Waseda University (2020)</li>
+                <li>Heigh:t	1.72 m (5 ft 8 in)</li>
+            </ul>
+
+            <h4>Figure skating career</h4>
+            <ul>
+                <li>Country: Japan</li>
+                <li>Discipline: Men's singles</li>
+                <li>Began skating:1998</li>
+                <li>Professional:2022 - present</li>
+                <li>Highest WS:1st (2014 - 2018)</li>
+            </ul>
+
+            <h4>Perosnal Interest</h4>
+            <ul>
+                <li>Interest: earphone collection</li>
+                <li>Favorite character: winnie the pooh (accompany him in almost every competition) </li>
+                <li>Favorite food:tomatoes, strawberry, dumplings, raw egg with rice</li>
+                <li>Favorite color:golden (the color of gold medel)</li>
+            </ul>
+
+            <h4>Awards</h4>
+            <ul>
+                <li>People's Honor Award (2018)</li>
+                <li>Medal of Honor (2014, 2018)</li>
+               
+            </article>
+    </main>
+    <script src = "image-interactions.js"></script>
+    <script src = "menuToggle.js"></script>
+</body>
+<footer>
+    <p id="footerlink"><a href = "index.html">Yuzuru Hanyu | Homepage</a></p>
+</footer>
+</html>
